@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="heart" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f43f5e"/>
+      <stop offset="100%" style="stop-color:#ec4899"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="200" height="200" rx="40" fill="url(#bg)"/>
+  <path d="M100 140 C100 140 55 105 55 80 C55 65 67 55 80 55 C90 55 97 62 100 68 C103 62 110 55 120 55 C133 55 145 65 145 80 C145 105 100 140 100 140Z" fill="url(#heart)" filter="url(#glow)" opacity="0.9"/>
+  <circle cx="80" cy="78" r="4" fill="white" opacity="0.4"/>
+  <rect x="88" y="90" width="24" height="18" rx="3" fill="none" stroke="white" stroke-width="2" opacity="0.5"/>
+  <circle cx="100" cy="99" r="3" fill="white" opacity="0.5"/>
+  <rect x="55" y="150" width="90" height="22" rx="4" fill="#f43f5e" opacity="0.15"/>
+  <text x="100" y="166" text-anchor="middle" font-family="Arial,sans-serif" font-weight="900" font-size="10" fill="#f43f5e" letter-spacing="2">MARRIAGE</text>
+</svg>

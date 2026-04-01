@@ -1,0 +1,11 @@
+# Robots.txt for Cyber eCitizen Kenya
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/admin
+Disallow: /api/payments
+Disallow: /api/agent
+Disallow: /api/cron
+
+# Sitemap
+Sitemap: https://ecitizen-cyber.co.ke/sitemap.xml

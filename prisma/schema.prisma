@@ -1,0 +1,75 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id                 String  @id @default(uuid())
+  name               String?
+  email              String? @unique
+  phone              String? @unique
+  idNumber           String? @unique
+  kraPin             String? @unique
+  onboardingComplete Boolean @default(false)
+  notes              String?
+  orders             Order[]
+}
+
+model Category {
+  id          String    @id @default(uuid())
+  slug        String    @unique
+  name        String
+  description String
+  services    Service[]
+}
+
+model Service {
+  id              String   @id @default(uuid())
+  categoryId      String
+  slug            String   @unique
+  title           String
+  price           Float
+  agentCommission Float    @default(0)
+  formSchema      Json
+  seoKeywords     String
+  orders          Order[]
+  category        Category @relation(fields: [categoryId], references: [id])
+}
+
+model Order {
+  id                String     @id @default(uuid())
+  userId            String
+  serviceId         String
+  status            String     @default("PENDING")
+  formData          Json
+  amountPaid        Float      @default(0)
+  commissionEarned  Float      @default(0)
+  requiresOtp       Boolean    @default(true)
+  providedOtp       String?
+  checkoutRequestId String?
+  mpesaReceipt      String?
+  createdAt         DateTime   @default(now())
+  updatedAt         DateTime   @updatedAt
+  documents         Document[]
+  service           Service    @relation(fields: [serviceId], references: [id])
+  user              User       @relation(fields: [userId], references: [id])
+}
+
+model Location {
+  id     String @id @default(uuid())
+  slug   String @unique
+  name   String
+  county String
+}
+
+model Document {
+  id       String @id @default(uuid())
+  orderId  String
+  fileUrl  String
+  fileName String
+  order    Order  @relation(fields: [orderId], references: [id])
+}
