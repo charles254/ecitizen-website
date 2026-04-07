@@ -10,7 +10,12 @@ RUN npx prisma generate
 FROM node:20-alpine AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
+COPY --from=deps /app/node_modules/.prisma ./node_modules/.prisma
 COPY . .
+
+# Create empty SQLite DB for build and run prisma push + seed
+RUN npx prisma db push --skip-generate && npx tsx prisma/seed.ts
+
 RUN npm run build
 
 # Stage 3: Production runner
