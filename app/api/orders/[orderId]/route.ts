@@ -1,9 +1,9 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
 
 export async function GET(
-    req: Request,
-    { params }: { params: { orderId: string } }
+    req: NextRequest,
+    { params }: { params: Promise<{ orderId: string }> }
 ) {
     try {
         const { orderId } = await params;
