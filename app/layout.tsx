@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from 'next/link';
+import Script from 'next/script';
 import "./globals.css";
 import dynamic from 'next/dynamic';
 import SchemaMarkup from "@/components/SchemaMarkup";
@@ -20,6 +21,9 @@ export const metadata: Metadata = {
   authors: [{ name: SITE_CONFIG.shortName }],
   viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
+  alternates: {
+    canonical: SITE_CONFIG.url,
+  },
   openGraph: {
     type: "website",
     locale: "en_KE",
@@ -59,6 +63,15 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-CQLQRNTE6C" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-CQLQRNTE6C');
+          `}
+        </Script>
         <SchemaMarkup 
           data={{
             "@context": "https://schema.org",

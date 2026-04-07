@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "eCitizen Services in All Kenyan Towns & Cities | Find Your Location",
   description: "Access eCitizen services across 500+ Kenyan towns. Find NTSA, DCI Good Conduct, Business Registration, and KRA services near you. County-by-county coverage.",
   alternates: {
-    canonical: "https://ecitizen-cyber.co.ke/kenya",
+    canonical: "https://cyberecitizen.com/kenya",
   },
 };
 

@@ -39,11 +39,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!category) return { title: 'Category Not Found' };
 
+  const title = `${category.name} Online Applications Kenya | Fast eCitizen Services`;
+  const description = `Professional assistance for all ${category.name}. ${category.description} Apply online securely and get your documents processed fast.`;
   return {
-    title: `${category.name} Online Applications Kenya | Fast eCitizen Services`,
-    description: `Professional assistance for all ${category.name}. ${category.description} Apply online securely and get your documents processed fast.`,
+    title,
+    description,
     alternates: {
-      canonical: `https://ecitizen-cyber.co.ke/services/${categorySlug}`,
+      canonical: `https://cyberecitizen.com/services/${categorySlug}`,
+    },
+    openGraph: {
+      title,
+      description,
+      url: `https://cyberecitizen.com/services/${categorySlug}`,
     },
   };
 }
@@ -122,7 +129,7 @@ export default async function CategoryHub({ params }: Props) {
               "itemOffered": {
                 "@type": "Service",
                 "name": service.title,
-                "url": `https://ecitizen-cyber.co.ke/services/${category.slug}/${service.slug}`
+                "url": `https://cyberecitizen.com/services/${category.slug}/${service.slug}`
               },
               "price": service.price,
               "priceCurrency": "KES"

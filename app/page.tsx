@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import SchemaMarkup from '@/components/SchemaMarkup';
 import { FadeIn, StaggerContainer, StaggerItem, ScaleIn, CountUp } from '@/components/Motion';
+import { SITE_CONFIG } from '@/lib/constants';
 
 // rendering-hoist-static-jsx: Category icon map with consistent premium SVG style
 const categoryIconMap: Record<string, string> = {
@@ -24,9 +25,9 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Cyber eCitizen Kenya",
-  "image": "https://ecitizen-cyber.co.ke/ntsa-hero.png",
-  "@id": "https://ecitizen-cyber.co.ke",
-  "url": "https://ecitizen-cyber.co.ke",
+  "image": "https://cyberecitizen.com/ntsa-hero.png",
+  "@id": "https://cyberecitizen.com",
+  "url": "https://cyberecitizen.com",
   "telephone": "+254700000000",
   "address": {
     "@type": "PostalAddress",
@@ -63,7 +64,7 @@ export default async function Home() {
               "@type": "Service",
               "name": cat.name,
               "description": cat.description,
-              "url": `https://ecitizen-cyber.co.ke/services/${cat.slug}`
+              "url": `${SITE_CONFIG.url}/services/${cat.slug}`
             }
           }))
         }} 

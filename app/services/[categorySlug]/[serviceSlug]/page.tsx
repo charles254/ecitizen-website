@@ -46,13 +46,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!service) return { title: 'Service Not Found' };
 
   const categoryName = service.category?.name || categorySlug;
+  const title = `${service.title} | Apply Online via ${categoryName} Portal Kenya`;
+  const description = `Apply for ${service.title} online in Kenya. Expert-assisted ${categoryName} processing with M-Pesa payment, real-time tracking, and KDPA-compliant data handling. Ksh ${service.price} service fee.`;
   return {
-    title: `${service.title} | Apply Online via ${categoryName} Portal Kenya`,
-    description: `Apply for ${service.title} online in Kenya. Expert-assisted ${categoryName} processing with M-Pesa payment, real-time tracking, and KDPA-compliant data handling. Ksh ${service.price} service fee.`,
+    title,
+    description,
     keywords: service.seoKeywords + ', eCitizen Kenya, Online application, Cyber cafe services',
     alternates: {
-        canonical: `https://ecitizen-cyber.co.ke/services/${categorySlug}/${serviceSlug}`,
-    }
+        canonical: `https://cyberecitizen.com/services/${categorySlug}/${serviceSlug}`,
+    },
+    openGraph: {
+      title,
+      description,
+      url: `https://cyberecitizen.com/services/${categorySlug}/${serviceSlug}`,
+    },
   };
 }
 

@@ -32,7 +32,7 @@ export function FadeIn({
   };
 
   const animateTo = { opacity: 1, x: 0, y: 0 };
-  const trans = { duration, delay, ease: [0.16, 1, 0.3, 1] };
+  const trans = { duration, delay, ease: [0.16, 1, 0.3, 1] as const };
 
   return (
     <motion.div
