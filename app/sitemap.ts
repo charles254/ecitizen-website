@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import prisma from '@/lib/prisma';
 import { SITE_CONFIG } from '@/lib/constants';
+import { hasLocationEnrichment, getEnrichedServiceSlugs } from '@/lib/location-enrichment';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [categories, services, locations] = await Promise.all([
@@ -43,25 +44,30 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   };
 
-  // Individual location pages — medium priority (pSEO spoke pages)
-  const locationEntries = locations.map((loc) => ({
-    url: `${baseUrl}/kenya/${loc.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.5,
-  }));
-
-  // Location-service combinations — lower priority to avoid thin content penalty
-  // Only generate for top locations (first 50) to control quality
-  const topLocations = locations.slice(0, 50);
-  const locationServiceEntries = topLocations.flatMap((loc) =>
-    services.map((ser) => ({
-      url: `${baseUrl}/kenya/${loc.slug}/${ser.slug}`,
+  // Individual location pages — only include enriched locations
+  const locationEntries = locations
+    .filter((loc) => hasLocationEnrichment(loc.slug))
+    .map((loc) => ({
+      url: `${baseUrl}/kenya/${loc.slug}`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
-      priority: 0.3,
-    }))
-  );
+      priority: 0.6,
+    }));
+
+  // Location-service combinations — only include combos with enriched service_notes
+  const locationServiceEntries = locations
+    .filter((loc) => hasLocationEnrichment(loc.slug))
+    .flatMap((loc) => {
+      const enrichedSlugs = getEnrichedServiceSlugs(loc.slug);
+      return services
+        .filter((ser) => enrichedSlugs.includes(ser.slug))
+        .map((ser) => ({
+          url: `${baseUrl}/kenya/${loc.slug}/${ser.slug}`,
+          lastModified: new Date(),
+          changeFrequency: 'monthly' as const,
+          priority: 0.4,
+        }));
+    });
 
   return [
     homepageEntry,

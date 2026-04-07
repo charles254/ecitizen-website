@@ -30,7 +30,7 @@ const categoryImageMap: Record<string, string> = {
 };
 
 type Props = {
-  params: { categorySlug: string };
+  params: Promise<{ categorySlug: string }>;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
