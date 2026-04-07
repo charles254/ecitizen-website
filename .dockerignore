@@ -1,0 +1,12 @@
+node_modules
+.next
+.git
+.claude
+.agents
+tmp
+--output
+*.log
+.env*
+expand_locations.ts
+tmp_count_locations.ts
+skills-lock.json
