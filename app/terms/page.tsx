@@ -4,6 +4,9 @@ import { SITE_CONFIG } from '@/lib/constants';
 export const metadata = {
   title: `Terms of Service | ${SITE_CONFIG.shortName}`,
   description: `Terms and conditions for using the ${SITE_CONFIG.shortName} application bridge.`,
+  alternates: {
+    canonical: `${SITE_CONFIG.url}/terms`,
+  },
 };
 
 export default function TermsPage() {

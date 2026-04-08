@@ -4,6 +4,9 @@ import { SITE_CONFIG } from '@/lib/constants';
 export const metadata = {
   title: `Privacy Policy | ${SITE_CONFIG.shortName}`,
   description: `How we handle and protect your data at ${SITE_CONFIG.shortName} in compliance with the KDPA.`,
+  alternates: {
+    canonical: `${SITE_CONFIG.url}/privacy`,
+  },
 };
 
 export default function PrivacyPage() {
