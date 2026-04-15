@@ -1211,7 +1211,6 @@ export const locationEnrichments: Record<string, LocationEnrichment> = {
         "Tourism enterprises, transport companies, and Taita Hills agricultural businesses can register business names online at our cafe.",
     },
   },
-  },
 
   // ─────────────────────────────────────────────
   // 19. BUNGOMA TOWN
