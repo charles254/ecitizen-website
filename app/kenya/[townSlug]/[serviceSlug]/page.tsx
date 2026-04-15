@@ -32,6 +32,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `https://cyberecitizen.com/kenya/${townSlug}/${serviceSlug}`,
     },
+    openGraph: {
+      title: `${service.title} in ${location.name} | Cyber eCitizen`,
+      description: `Apply for ${service.title} in ${location.name}, ${location.county} County. Fast, secure eCitizen processing. No queues, instant support, KDPA compliant.`,
+      url: `https://cyberecitizen.com/kenya/${townSlug}/${serviceSlug}`,
+      images: [{ url: 'https://cyberecitizen.com/ntsa-hero.png', width: 1200, height: 630, alt: `${service.title} in ${location.name}` }],
+    },
     ...(robots ? { robots } : {}),
   };
 }

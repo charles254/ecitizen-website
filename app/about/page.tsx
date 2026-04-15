@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { SITE_CONFIG } from '@/lib/constants';
 
+export const revalidate = 86400; // Revalidate every 24 hours
+
 export const metadata: Metadata = {
   title: `About Us | ${SITE_CONFIG.shortName}`,
   description: `Learn about ${SITE_CONFIG.shortName} — Kenya's trusted eCitizen application bridge. Our mission, team, and commitment to secure digital government services.`,

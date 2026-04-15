@@ -1211,6 +1211,228 @@ export const locationEnrichments: Record<string, LocationEnrichment> = {
         "Tourism enterprises, transport companies, and Taita Hills agricultural businesses can register business names online at our cafe.",
     },
   },
+  },
+
+  // ─────────────────────────────────────────────
+  // 19. BUNGOMA TOWN
+  // ─────────────────────────────────────────────
+  "bungoma-town": {
+    deep_dive:
+      "Bungoma is the county headquarters of Bungoma County in western Kenya, serving as the administrative and commercial " +
+      "centre for a predominantly agricultural region known for sugarcane and maize farming. The town is a gateway to Mount " +
+      "Elgon National Park and serves residents from Webuye, Kimilili, and surrounding rural areas. Our Bungoma cyber cafe " +
+      "provides eCitizen services to farmers, traders, teachers, and students who would otherwise need to travel to Eldoret " +
+      "or Kisumu for government services.",
+
+    local_tips: [
+      "The Bungoma Huduma Centre handles ID, passport, and NTSA services for Bungoma County.",
+      "DCI Bungoma office at the county police headquarters handles fingerprinting for police clearance.",
+      "Bungoma is about 45 minutes from Eldoret by road if you need services not available locally.",
+    ],
+
+    popular_services: ["kra-pin-registration", "police-clearance", "smart-dl-renewal"],
+
+    faqs: [
+      {
+        question: "Where do I get fingerprinted for police clearance in Bungoma?",
+        answer: "Fingerprinting is done at the DCI Bungoma office at the county police headquarters. Book your slot via eCitizen before visiting.",
+      },
+    ],
+
+    service_notes: {
+      "kra-pin-registration": "KRA PIN registration is popular among sugarcane and maize farmers and traders in Bungoma County.",
+      "police-clearance": "DCI Bungoma office handles fingerprinting. Popular among teachers and youth seeking employment.",
+      "smart-dl-renewal": "NTSA services available at the Bungoma Huduma Centre for driving licence renewals.",
+    },
+  },
+
+  // ─────────────────────────────────────────────
+  // 20. EMBU TOWN
+  // ─────────────────────────────────────────────
+  "embu-town": {
+    deep_dive:
+      "Embu is the county headquarters of Embu County in the central-eastern region of Kenya, situated on the southeastern " +
+      "slopes of Mount Kenya. The town serves as the administrative hub for the surrounding agricultural communities known " +
+      "for tea, coffee, and macadamia farming. Our Embu cyber cafe assists residents from Runyenjes, Siakago, and Mbeere " +
+      "with eCitizen services that would otherwise require a trip to Nairobi.",
+
+    local_tips: [
+      "The Embu Huduma Centre on the main highway handles passport biometrics and ID services.",
+      "DCI Embu office handles police clearance fingerprinting for the county.",
+      "Embu is about 2 hours from Nairobi via Sagana — process services online locally to avoid the trip.",
+    ],
+
+    popular_services: ["kra-pin-registration", "police-clearance", "birth-registration"],
+
+    faqs: [
+      {
+        question: "Is there a Huduma Centre in Embu?",
+        answer: "Yes. The Embu Huduma Centre handles passport biometrics, ID applications, and other government services for Embu County.",
+      },
+    ],
+
+    service_notes: {
+      "kra-pin-registration": "Popular among tea and coffee farmers in the Mount Kenya region who need tax compliance.",
+      "police-clearance": "DCI Embu office handles fingerprinting. Saves a trip to Nairobi for clearance certificates.",
+      "birth-registration": "Birth certificate processing for Embu County residents at the civil registration office.",
+    },
+  },
+
+  // ─────────────────────────────────────────────
+  // 21. ISIOLO TOWN
+  // ─────────────────────────────────────────────
+  "isiolo-town": {
+    deep_dive:
+      "Isiolo is the county headquarters of Isiolo County, a rapidly developing frontier town at the junction of northern " +
+      "Kenya routes. The LAPSSET corridor and planned resort city have increased demand for government services. Our Isiolo " +
+      "cyber cafe serves pastoralist communities, traders, and NGO workers across the vast northern Kenya region.",
+
+    local_tips: [
+      "The Isiolo Huduma Centre handles government services for the county and surrounding northern regions.",
+      "DCI Isiolo office at the county police station handles fingerprinting.",
+      "Isiolo is a gateway to Samburu, Marsabit, and Turkana — our cafe serves clients from across northern Kenya.",
+    ],
+
+    popular_services: ["kra-pin-registration", "police-clearance", "passport-application"],
+
+    faqs: [
+      {
+        question: "Can I process passport applications in Isiolo?",
+        answer: "Yes. The Isiolo Huduma Centre handles passport biometrics. Process your application online at our cafe, then visit for biometrics.",
+      },
+    ],
+
+    service_notes: {
+      "kra-pin-registration": "Important for traders and pastoralists formalising businesses along the LAPSSET corridor.",
+      "police-clearance": "DCI Isiolo handles fingerprinting for residents across northern Kenya counties.",
+      "passport-application": "Passport biometrics at the Isiolo Huduma Centre saves the long trip to Nairobi or Meru.",
+    },
+  },
+
+  // ─────────────────────────────────────────────
+  // 22. KERICHO TOWN
+  // ─────────────────────────────────────────────
+  "kericho-town": {
+    deep_dive:
+      "Kericho is the county headquarters of Kericho County in the Kenya highlands, globally renowned as the centre of " +
+      "Kenya's tea industry. The town serves tea estate workers, farmers, and traders across the Rift Valley. Our Kericho " +
+      "cyber cafe provides essential eCitizen services to a population that would otherwise travel to Nakuru or Kisumu.",
+
+    local_tips: [
+      "The Kericho Huduma Centre handles government services for the county.",
+      "DCI Kericho office handles police clearance fingerprinting.",
+      "Kericho is about 1 hour from Kisumu and 2 hours from Nakuru — process services locally at our cafe.",
+    ],
+
+    popular_services: ["kra-pin-registration", "police-clearance", "business-name-search"],
+
+    faqs: [
+      {
+        question: "Where is the nearest Huduma Centre to Kericho?",
+        answer: "The Kericho Huduma Centre is in Kericho town and handles passport, ID, and other government services for the county.",
+      },
+    ],
+
+    service_notes: {
+      "kra-pin-registration": "Essential for tea estate workers and farmers needing tax compliance in Kericho County.",
+      "police-clearance": "DCI Kericho office handles fingerprinting for tea industry workers and those seeking overseas employment.",
+      "business-name-search": "Popular among tea traders and agribusiness entrepreneurs in the Kericho highlands.",
+    },
+  },
+
+  // ─────────────────────────────────────────────
+  // 23. KITALE TOWN
+  // ─────────────────────────────────────────────
+  "kitale-town": {
+    deep_dive:
+      "Kitale is the county headquarters of Trans-Nzoia County in western Kenya, a major agricultural town known for maize " +
+      "and wheat farming. The town serves as the commercial hub for the North Rift region and gateway to Mount Elgon and " +
+      "Cherangani Hills. Our Kitale cyber cafe assists farmers, traders, and students with eCitizen services.",
+
+    local_tips: [
+      "The Kitale Huduma Centre handles government services for Trans-Nzoia County.",
+      "DCI Kitale office handles police clearance fingerprinting at the county headquarters.",
+      "Kitale is about 1 hour from Eldoret — save time by processing services at our local cafe.",
+    ],
+
+    popular_services: ["kra-pin-registration", "police-clearance", "smart-dl-renewal"],
+
+    faqs: [
+      {
+        question: "Can I renew my driving licence in Kitale?",
+        answer: "Yes. NTSA services are available at the Kitale Huduma Centre. Apply online at our cafe and complete the process locally.",
+      },
+    ],
+
+    service_notes: {
+      "kra-pin-registration": "Important for large-scale maize and wheat farmers in Trans-Nzoia County.",
+      "police-clearance": "DCI Kitale handles fingerprinting for the county. Popular among youth seeking employment.",
+      "smart-dl-renewal": "NTSA Kitale handles driving licence services for the agricultural transport sector.",
+    },
+  },
+
+  // ─────────────────────────────────────────────
+  // 24. MERU TOWN
+  // ─────────────────────────────────────────────
+  "meru-town": {
+    deep_dive:
+      "Meru is the county headquarters of Meru County on the northeastern slopes of Mount Kenya, known for miraa (khat) " +
+      "trade, tea, coffee, and horticulture. The town is a bustling commercial centre serving Meru, Tharaka-Nithi, and " +
+      "parts of Isiolo County. Our Meru cyber cafe provides eCitizen services to a large agricultural and trading community.",
+
+    local_tips: [
+      "The Meru Huduma Centre handles passport biometrics, NTSA, and ID services for Meru County.",
+      "DCI Meru office at the county police headquarters handles fingerprinting for police clearance.",
+      "Meru is about 4 hours from Nairobi — process services locally to avoid the trip.",
+    ],
+
+    popular_services: ["kra-pin-registration", "police-clearance", "business-name-search"],
+
+    faqs: [
+      {
+        question: "Where do I get fingerprinted for police clearance in Meru?",
+        answer: "DCI Meru office at the county police headquarters handles fingerprinting. Book your appointment online at our cafe before visiting.",
+      },
+    ],
+
+    service_notes: {
+      "kra-pin-registration": "Essential for miraa traders, coffee farmers, and horticultural exporters in Meru County.",
+      "police-clearance": "DCI Meru handles fingerprinting. Popular among those seeking overseas employment or education.",
+      "business-name-search": "High demand from agricultural traders and miraa exporters registering formal businesses.",
+    },
+  },
+
+  // ─────────────────────────────────────────────
+  // 25. NAIVASHA TOWN
+  // ─────────────────────────────────────────────
+  "naivasha-town": {
+    deep_dive:
+      "Naivasha is a town in Nakuru County situated along the shores of Lake Naivasha, a major hub for Kenya's flower " +
+      "export industry and geothermal energy sector. The town serves thousands of flower farm workers, tourists visiting " +
+      "Hell's Gate National Park, and traders along the Nairobi-Naivasha highway. Our Naivasha cyber cafe provides " +
+      "eCitizen services to this diverse working population.",
+
+    local_tips: [
+      "Naivasha does not have a full Huduma Centre — the nearest is in Nakuru, about 1 hour away.",
+      "DCI Naivasha at the local police station handles fingerprinting for police clearance.",
+      "Flower farm workers can process KRA and NTSA services at our cafe without travelling to Nakuru or Nairobi.",
+    ],
+
+    popular_services: ["kra-pin-registration", "police-clearance", "smart-dl-renewal"],
+
+    faqs: [
+      {
+        question: "Is there a Huduma Centre in Naivasha?",
+        answer: "Naivasha does not have a full Huduma Centre. The nearest is in Nakuru town, about 1 hour by road. Our cafe helps you process most services online to avoid the trip.",
+      },
+    ],
+
+    service_notes: {
+      "kra-pin-registration": "Popular among flower farm workers and geothermal sector employees in Naivasha.",
+      "police-clearance": "DCI Naivasha at the local police station handles fingerprinting for the area.",
+      "smart-dl-renewal": "NTSA services for flower transport drivers and commuters on the Nairobi-Naivasha highway.",
+    },
+  },
 };
 
 // ─────────────────────────────────────────────

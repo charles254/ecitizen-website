@@ -117,8 +117,8 @@ export default async function Home() {
               </div>
 
               <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] md:leading-[0.95] tracking-[0.02em] mb-4 md:mb-6 drop-shadow-2xl animate-fade-in">
-                The Smart Way <br/>
-                To <span className="text-gradient drop-shadow-sm">eCitizen</span>
+                Kenya <span className="text-gradient drop-shadow-sm">eCitizen</span> Services <br/>
+                NTSA, DCI & BRS Applications
               </h1>
 
               <p className="text-lg md:text-xl text-slate-400 max-w-xl leading-relaxed mb-6 font-medium animate-fade-in">

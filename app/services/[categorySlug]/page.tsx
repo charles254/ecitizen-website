@@ -6,6 +6,8 @@ import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import SchemaMarkup from '@/components/SchemaMarkup';
 
+export const revalidate = 86400; // Revalidate every 24 hours
+
 // server-cache-react: Deduplicate DB query between generateMetadata and page component
 const getCategoryBySlug = cache(async (slug: string) => {
   return prisma.category.findUnique({
@@ -40,7 +42,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!category) return { title: 'Category Not Found' };
 
   const title = `${category.name} Online Applications Kenya | Fast eCitizen Services`;
-  const description = `Professional assistance for all ${category.name}. ${category.description} Apply online securely and get your documents processed fast.`;
+  const rawDescription = `Professional assistance for all ${category.name}. ${category.description} Apply online securely and get your documents processed fast.`;
+  const description = rawDescription.length > 155 ? rawDescription.slice(0, 152) + '...' : rawDescription;
   return {
     title,
     description,
@@ -51,6 +54,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
       url: `https://cyberecitizen.com/services/${categorySlug}`,
+      images: [{ url: 'https://cyberecitizen.com/ntsa-hero.png', width: 1200, height: 630, alt: `${category.name} eCitizen Services` }],
     },
   };
 }
