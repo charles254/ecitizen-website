@@ -62,6 +62,8 @@ export default async function ServiceLocationPage({ params }: Props) {
         <SchemaMarkup data={{
           "@context": "https://schema.org",
           "@type": "FAQPage",
+          "datePublished": "2025-06-01",
+          "dateModified": new Date().toISOString().split('T')[0],
           "mainEntity": [
             {
               "@type": "Question",

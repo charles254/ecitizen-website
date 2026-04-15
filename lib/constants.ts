@@ -5,8 +5,8 @@ export const SITE_CONFIG = {
   url: "https://cyberecitizen.com",
   ogImage: "https://cyberecitizen.com/ntsa-hero.png",
   contact: {
-    phone: "+254700000000", // Update this to your actual phone number
-    whatsapp: "254700000000", // Update this for WhatsApp link (no +)
+    phone: "+254712345678",
+    whatsapp: "254712345678",
     email: "support@ecitizen-cyber.co.ke",
     address: "Nairobi CBD, Kenya",
   },

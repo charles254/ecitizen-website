@@ -70,7 +70,7 @@ export default async function LocationHub({ params }: Props) {
         "name": `Cyber eCitizen ${location.name}`,
         "description": `eCitizen application services in ${location.name}, ${location.county} County`,
         "url": `https://cyberecitizen.com/kenya/${townSlug}`,
-        "telephone": "+254700000000",
+        "telephone": "+254712345678",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": location.name,
@@ -87,7 +87,9 @@ export default async function LocationHub({ params }: Props) {
           "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
           "opens": "07:00",
           "closes": "22:00"
-        }
+        },
+        "datePublished": "2025-06-01",
+        "dateModified": new Date().toISOString().split('T')[0]
       }} />
 
       {/* FAQPage schema if enrichment available */}

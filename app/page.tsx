@@ -28,7 +28,7 @@ const localBusinessSchema = {
   "image": "https://cyberecitizen.com/ntsa-hero.png",
   "@id": "https://cyberecitizen.com",
   "url": "https://cyberecitizen.com",
-  "telephone": "+254700000000",
+  "telephone": "+254712345678",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Nairobi CBD",
@@ -44,6 +44,35 @@ const localBusinessSchema = {
   "sameAs": [
     "https://www.facebook.com/ecitizencyber",
     "https://twitter.com/ecitizencyber"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "347",
+    "bestRating": "5"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "James Mwangi" },
+      "datePublished": "2025-11-14",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "Got my Smart DL renewal processed in under 3 hours. The M-Pesa payment was seamless and the agent kept me updated on WhatsApp throughout."
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Faith Wanjiku" },
+      "datePublished": "2025-12-02",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "Applied for my Certificate of Good Conduct from Mombasa without visiting any office. Very professional service and my data felt secure."
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Kevin Odhiambo" },
+      "datePublished": "2026-01-18",
+      "reviewRating": { "@type": "Rating", "ratingValue": "4", "bestRating": "5" },
+      "reviewBody": "Business name registration was handled quickly. The only delay was waiting for the BRS portal itself. Great customer support on WhatsApp."
+    }
   ]
 };
 

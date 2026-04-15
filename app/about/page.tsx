@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_CONFIG.url}/about`,
   },
+  openGraph: {
+    title: `About Us | ${SITE_CONFIG.shortName}`,
+    description: `Learn about ${SITE_CONFIG.shortName} — Kenya's trusted eCitizen application bridge. Our mission, team, and commitment to secure digital government services.`,
+    url: `${SITE_CONFIG.url}/about`,
+  },
 };
 
 export default function AboutPage() {

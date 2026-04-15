@@ -74,12 +74,24 @@ export default async function ServicePage({ params }: Props) {
 
   return (
     <div className="bg-slate-50 min-h-screen">
+      {/* BreadcrumbList Schema */}
+      <SchemaMarkup data={{
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cyberecitizen.com" },
+          { "@type": "ListItem", "position": 2, "name": service.category.name, "item": `https://cyberecitizen.com/services/${categorySlug}` },
+          { "@type": "ListItem", "position": 3, "name": service.title, "item": `https://cyberecitizen.com/services/${categorySlug}/${serviceSlug}` }
+        ]
+      }} />
       {/* HowTo Schema for rich snippets */}
       <SchemaMarkup data={{
         "@context": "https://schema.org",
         "@type": "HowTo",
         "name": `How to Apply for ${service.title} Online`,
         "description": `Step-by-step guide to apply for ${service.title} through our eCitizen bridge service.`,
+        "datePublished": "2025-06-01",
+        "dateModified": new Date().toISOString().split('T')[0],
         "step": [
           { "@type": "HowToStep", "position": 1, "name": "Fill the Application Form", "text": "Complete the required fields including your ID number and personal details." },
           { "@type": "HowToStep", "position": 2, "name": "Pay via M-Pesa", "text": `Pay the Ksh ${service.price} service fee through the M-Pesa STK push sent to your phone.` },

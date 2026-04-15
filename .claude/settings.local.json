@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(npx prisma:*)",
+      "Bash(npx next:*)",
+      "Bash(taskkill //F //PID 18624)",
+      "Bash(rm -rf .next/dev/lock)",
+      "Bash(npx skills:*)",
+      "Bash(find '/c/Users/ENG. KIPTOO/Desktop/Ecitizen Website/.agents' -type f -name *.md)",
+      "Bash(node -e \":*)",
+      "Bash(npm install:*)",
+      "Bash(taskkill //F //PID 17720)",
+      "Bash(taskkill //F //IM node.exe)",
+      "Bash(node tmp/seed-services.js)"
+    ]
+  }
+}

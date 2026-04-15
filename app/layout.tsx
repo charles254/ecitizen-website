@@ -20,16 +20,23 @@ export const metadata: Metadata = {
   keywords: "eCitizen Kenya, NTSA Smart DL Renewal, DCI Good Conduct, Business Registration Kenya, KRA PIN services, Kenyan digital services",
   authors: [{ name: SITE_CONFIG.shortName }],
   viewport: "width=device-width, initial-scale=1",
-  robots: "index, follow",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   alternates: {
     canonical: SITE_CONFIG.url,
   },
   openGraph: {
     type: "website",
     locale: "en_KE",
-    url: SITE_CONFIG.url,
-    title: SITE_CONFIG.name,
-    description: SITE_CONFIG.description,
     siteName: SITE_CONFIG.shortName,
     images: [
       {
@@ -42,8 +49,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: SITE_CONFIG.name,
-    description: SITE_CONFIG.description,
     images: [SITE_CONFIG.ogImage],
   },
   icons: {

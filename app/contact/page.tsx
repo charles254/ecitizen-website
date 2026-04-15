@@ -3,10 +3,15 @@ import Link from 'next/link';
 import { SITE_CONFIG } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: `Contact Us | ${SITE_CONFIG.shortName}`,
-  description: `Get in touch with ${SITE_CONFIG.shortName}. Reach us via WhatsApp, email, or phone for eCitizen application support.`,
+  title: `Contact Us — WhatsApp, Phone & Email Support | ${SITE_CONFIG.shortName}`,
+  description: `Get in touch with ${SITE_CONFIG.shortName}. Reach us via WhatsApp, email, or phone for eCitizen application support. Available 7 days a week, 7 AM - 10 PM.`,
   alternates: {
     canonical: `${SITE_CONFIG.url}/contact`,
+  },
+  openGraph: {
+    title: `Contact Us — WhatsApp, Phone & Email Support | ${SITE_CONFIG.shortName}`,
+    description: `Get in touch with ${SITE_CONFIG.shortName}. Reach us via WhatsApp, email, or phone for eCitizen application support. Available 7 days a week, 7 AM - 10 PM.`,
+    url: `${SITE_CONFIG.url}/contact`,
   },
 };
 
