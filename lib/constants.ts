@@ -1,5 +1,5 @@
 export const SITE_CONFIG = {
-  name: "Official eCitizen Cyber Cafe",
+  name: "eCitizen Cyber Cafe",
   shortName: "Cyber eCitizen",
   description: "Accelerate your eCitizen applications for NTSA, DCI, and BRS. Secure, fast, and KDPA compliant processing by expert agents.",
   url: "https://cyberecitizen.com",

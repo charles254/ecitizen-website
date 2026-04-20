@@ -177,7 +177,7 @@ export default async function ServicePage({ params }: Props) {
                         <div className="w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center overflow-hidden border border-white/20 shadow-xl">
                              <Image 
                                 src={categoryImageMap[categorySlug] || '/ntsa-hero.png'} 
-                                alt={`${service.title} Application Official eCitizen Bridge`}
+                                alt={`${service.title} Application eCitizen Bridge`}
                                 width={64}
                                 height={64}
                                 className="object-cover"

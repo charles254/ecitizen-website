@@ -183,7 +183,7 @@ export default async function CategoryHub({ params }: Props) {
                     <div className="mb-5 w-full h-36 rounded-xl overflow-hidden border border-white/10 relative">
                         <Image 
                             src={categoryImageMap[categorySlug] || '/ntsa-hero.png'} 
-                            alt={`${category.name} eCitizen Kenya Official Application Portal`}
+                            alt={`${category.name} eCitizen Kenya Application Portal`}
                             fill
                             className="object-cover group-hover:scale-110 transition-transform duration-700"
                         />
@@ -225,7 +225,7 @@ export default async function CategoryHub({ params }: Props) {
                         )}
                     </div>
                     <h4 className="text-lg font-black text-slate-900 mb-1.5 group-hover:text-emerald-600 transition-colors uppercase tracking-tight">{service.title}</h4>
-                    <p className="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-5">Official eCitizen eRequest</p>
+                    <p className="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-5">eCitizen eRequest</p>
 
                     <div className="flex items-center justify-between border-t border-slate-50 pt-5">
                         <div>

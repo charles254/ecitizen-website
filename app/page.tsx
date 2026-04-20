@@ -158,7 +158,7 @@ export default async function Home() {
                      <div className="space-y-8">
                          <div className="flex justify-between items-center">
                             <div className="w-14 h-14 rounded-2xl bg-emerald-500/20 flex items-center justify-center overflow-hidden border border-emerald-500/30">
-                               <Image src="/ntsa-hero.png" alt="Official NTSA Smart DL Renewal eCitizen Kenya" width={56} height={56} className="object-cover" />
+                               <Image src="/ntsa-hero.png" alt="NTSA Smart DL Renewal eCitizen Kenya" width={56} height={56} className="object-cover" />
                             </div>
                            <div className="text-right">
                               <p className="text-[10px] text-slate-500 font-black uppercase tracking-widest">Tracking Status</p>
@@ -227,7 +227,7 @@ export default async function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <FadeIn className="text-center mb-10 md:mb-14">
               <h2 className="text-[9px] font-black text-emerald-600 uppercase tracking-[0.5em] mb-3">Service Catalog 2026</h2>
-              <h3 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tighter mb-3">Official eCitizen Bridge</h3>
+              <h3 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tighter mb-3">eCitizen Bridge</h3>
               <p className="text-slate-500 font-medium max-w-2xl mx-auto text-base md:text-lg leading-relaxed italic">&quot;Access Kenya&apos;s digital infrastructure through a secure, high-speed human-assisted gateway.&quot;</p>
           </FadeIn>
 
@@ -273,7 +273,7 @@ export default async function Home() {
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center relative z-10">
                       <div>
                           <h2 className="text-[10px] font-black text-emerald-400 uppercase tracking-[0.5em] mb-8">Security Advisory</h2>
-                          <h3 className="text-3xl md:text-4xl font-black tracking-tighter mb-6 leading-tight">Navigating the <span className="text-gradient">Official</span> eCitizen Portal</h3>
+                          <h3 className="text-3xl md:text-4xl font-black tracking-tighter mb-6 leading-tight">Navigating the <span className="text-gradient">eCitizen</span> Portal</h3>
                           <p className="text-slate-400 text-lg font-medium leading-relaxed italic mb-12">
                               &quot;As the primary gateway for Kenyan government services, security is our top priority. We ensure every transaction is handled with enterprise-grade integrity.&quot;
                           </p>
