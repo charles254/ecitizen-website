@@ -28,7 +28,7 @@ const localBusinessSchema = {
   "image": "https://cyberecitizen.com/ntsa-hero.png",
   "@id": "https://cyberecitizen.com",
   "url": "https://cyberecitizen.com",
-  "telephone": "+254712345678",
+  "telephone": "+254797201411",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Nairobi CBD",

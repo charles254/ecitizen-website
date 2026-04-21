@@ -247,7 +247,7 @@ export default async function CategoryHub({ params }: Props) {
                     <p className="text-white/70 text-xs leading-relaxed font-bold mb-5 italic">&quot;Speak directly to our agents via WhatsApp for manual assistance.&quot;</p>
                 </div>
                 <a 
-                   href="https://wa.me/254712345678" 
+                   href="https://wa.me/254797201411" 
                    target="_blank" 
                    rel="noopener noreferrer"
                    className="w-full py-3 bg-white text-slate-950 rounded-xl font-black text-[10px] uppercase tracking-widest shadow-lg hover:-translate-y-1 transition-premium active:scale-95 text-center flex items-center justify-center"

@@ -58,7 +58,7 @@ export default function TrackOrder() {
                   Active Bridge Sync
               </div>
               <p className="text-slate-400 text-[10px] font-bold uppercase tracking-widest">
-                   Need help? <Link href="https://wa.me/254712345678" className="text-emerald-600 hover:underline">Contact Support</Link>
+                   Need help? <Link href="https://wa.me/254797201411" className="text-emerald-600 hover:underline">Contact Support</Link>
               </p>
           </div>
         </div>

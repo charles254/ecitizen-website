@@ -70,7 +70,7 @@ export default async function LocationHub({ params }: Props) {
         "name": `Cyber eCitizen ${location.name}`,
         "description": `eCitizen application services in ${location.name}, ${location.county} County`,
         "url": `https://cyberecitizen.com/kenya/${townSlug}`,
-        "telephone": "+254712345678",
+        "telephone": "+254797201411",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": location.name,
